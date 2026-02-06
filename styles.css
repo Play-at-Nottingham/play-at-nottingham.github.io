@@ -119,32 +119,14 @@ header nav {
     margin-bottom: 1.5rem;
 }
 
-.aims-list {
-    list-style: none;
-    padding: 0;
-}
-
-.aims-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 1.25rem;
+#aims p {
     color: var(--color-text-light);
+    margin-bottom: 1.5rem;
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
-.aims-list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.65rem;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #a0aec0;
-}
-
-.aims-list li:last-child {
+#aims p:last-child {
     margin-bottom: 0;
 }
 

@@ -69,19 +69,6 @@ header nav {
     color: var(--color-accent);
 }
 
-/* Hero Section */
-#hero {
-    background-color: var(--color-bg-light);
-    padding: 4rem 0;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color-primary);
-    line-height: 1.2;
-}
-
 /* About Section */
 #about {
     background-color: var(--color-bg-white);
@@ -212,14 +199,6 @@ footer p {
         gap: 1.5rem;
     }
 
-    #hero {
-        padding: 3rem 0;
-    }
-
-    #hero h1 {
-        font-size: 2.25rem;
-    }
-
     .members-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -230,10 +209,6 @@ footer p {
     .nav-links {
         gap: 1rem;
         font-size: 0.85rem;
-    }
-
-    #hero h1 {
-        font-size: 1.75rem;
     }
 
     .members-grid {

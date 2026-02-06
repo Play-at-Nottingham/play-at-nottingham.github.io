@@ -1,0 +1,141 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables for easy theming */
+:root {
+    --color-primary: #1a1a2e;
+    --color-secondary: #16213e;
+    --color-accent: #0f3460;
+    --color-highlight: #e94560;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-background: #ffffff;
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* Navigation */
+header {
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-highlight);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--color-secondary);
+    color: #fff;
+    margin: -2rem -2rem 2rem -2rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-highlight);
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primary);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #hero {
+        margin: -1rem -1rem 1rem -1rem;
+        padding: 2rem 1rem;
+    }
+}
